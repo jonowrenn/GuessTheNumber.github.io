@@ -1,12 +1,61 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
 }
 
-input, button {
-    margin: 10px;
-    padding: 10px;
+.game-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+.instructions {
+    color: #555;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adds space between the input and button */
+    margin: 20px 0;
+}
+
+.guess-input, .submit-button {
+    flex: 1; /* This makes both elements take up equal space */
+    padding: 12px 20px;
     font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+.guess-input {
+    margin-right: 5px; /* Optionally adjust if needed for alignment */
+}
+
+.submit-button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.result-text {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
 }
